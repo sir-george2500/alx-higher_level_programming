@@ -9,12 +9,13 @@ def safe_print_division(a, b):
         b (int, float): The divisor.
 
     Returns:
-        float or None: The result of the division, or None in case of division by zero.
+        float or None: The result of the division, or None in case of division by zero or floating point error.
     """
     try:
         div = a / b
-    except ZeroDivisionError:
+    except (ZeroDivisionError, FloatingPointError):
         div = None
     finally:
         print("Inside result: {}".format(div))
-        return div
+    return div
+
