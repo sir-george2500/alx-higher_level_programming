@@ -1,3 +1,1 @@
-# Python Networking 1
-
-will update later
+# 0x11. Python - Network #1
